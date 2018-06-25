@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import App from './app.vue'
 
-import './common/styles/main.css'
-import './common/styles/vue.styl'
-import './common/images/toolbox.jpg'
+import './common/styles/main.styl'
+import './common/styles/global.styl'
 
 const root = document.createElement('div')
 document.body.appendChild(root)

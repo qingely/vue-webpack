@@ -1,0 +1,24 @@
+language: node_js
+node_js: stable
+#cache:
+#  directories:
+#    - node_modules
+install:
+- npm install
+
+script:
+- npm run build
+after_script:
+- cd ./dist
+- git init
+- git config user.name "${U_NAME}"
+- git config user.email "${U_EMAIL}"
+- git add .
+- git commit -m "Update docs"
+- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+branches:
+  only:
+  - master
+#env: #环境变量在travis-ci的仓库设置里面配置了就不需要在这里配置了
+  #global:
+  #- GH_REF: github.com/kuleyu/hexolog.git
