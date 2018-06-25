@@ -13,4 +13,4 @@
 
 采用了[travis](https://travis-ci.org/)自动生成应用并部署到 `Github Pages` 上。
 
-实际效果：👉 [push me](https://qingely.github.io/vue-webpack)
+实际效果：👉 [click me](https://qingely.github.io/vue-webpack)
