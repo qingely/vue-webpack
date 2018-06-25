@@ -8,3 +8,9 @@
   - 用 "mini-css-extract-plugin" 代替了 "extract-text-webpack-plugin"
 
 除此之外，本项目还用到了 `localStorage` 来存储。 
+
+## 预览
+
+采用了[travis](https://travis-ci.org/)自动生成应用并部署到 `Github Pages` 上。
+
+实际效果：👉 [push me](https://qingely.github.io/vue-webpack)
